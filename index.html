@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murao Natural Garden</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Noto+Serif+JP|Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+        $(function() {
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function() {
+                // スクロールの速度
+                var speed = 600; // ミリ秒で記述
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top - 55;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="title" id="top">Murao Natural Garden</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">トップ</a></li>
+                <li><a href="#summer">seasons</a></li>
+                <li><a href="#access">アクセス</a></li>
+<!--
+                <li><a href="">autumn</a></li>
+                <li><a href="">winter</a></li>
+-->
+
+
+
+
+
+
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="bxslidermain">
+
+        <ul class="bxslider">
+
+            <li><img class="bximg" src="image.2/Heroimage6.PNG" alt="" width="1263"></li>
+            <li><img class="bximg" src="image.2/Heroimage7.PNG" alt="" width="1263"></li>
+            <li><img class="bximg" src="image.2/Heroimage8.PNG" alt="" width="1263"></li>
+            <!--<li><im class= src="../images/sample-04.png" alt="" width="640"></li>-->
+        </ul>
+    </div>
+
+
+    <div class="introduce">
+        <p id="test">広大な見沼田んぼの一角にある秘密の花園　ナチュラルガーデン村尾<br>
+            花の持つ美しさ、そして心の癒しをもらいながら、日々ボランティアの方々や<br>
+            家族と和気あいあいと丹精込めて花づくりに励んでいます。</p>
+        <input type="button" value="・・・もっと見る" onclick="abc();">
+
+    </div>
+
+
+
+
+
+    <div class="top-seasons">
+        <div class="season1" id="spring">
+            <div class="imgword"><img class="img1" src="image.2/IMG_1433.JPG" alt="" width="500">
+                <h1 class="first-title">SPRING</h1>
+                <h2 class="second-title"> 花の季節の到来</h2>
+            </div>
+            <p>
+                春についての説明　Gmailが来たら書き直す。
+                春は花たちが美しいですね。春はあけぼの。
+            </p>
+            <a href="spring.html" target="_blank">詳しく見る➡</a>
+        </div>
+
+
+        <div class="season2" id="summer">
+            <img class="img2" src="image.1/IMG_1511.JPG" alt="" width="500">
+            <h1 class="first-title2">SUMMER</h1>
+            <h2 class="second-title2">太陽のひざし</h2>
+            <p>夏についての説明<br>
+                gmailが来たらまた書く
+                上の写真は夏のものではないので変えること<br>
+            </p>
+            <a href="">詳しく見る➡</a>
+        </div>
+
+
+
+
+    </div>
+    <div class="top-seasons">
+        <div class="season3" id=autumn>
+            <img class="img1" src="image.2/IMG_1449.JPG" alt="" width="500">
+            <h1 class="first-title">AUTUMN</h1>
+            <h2 class="second-title">飽きっぽい秋</h2>
+
+            <p>
+                春についての説明　Gmailが来たら書き直す。<br>
+                春は花たちが美しいですね。春はあけぼの。ようよう白くなりゆくやまぎわ
+            </p>
+            <a href="">詳しく見る➡</a>
+        </div>
+
+        <div class="season4" id=winter>
+            <img class="img3" src="image.2/IMG_1450.JPG" alt="" width="500">
+            <h1 class="first-title2">WINTER</h1>
+            <h2 class="second-title2">小春日和</h2>
+            <p>冬についての説明<br>
+                gmailが来たらまた書く
+                上の写真は夏のものではないので変えること<br>
+            </p>
+            <a href="">詳しく見る➡</a>
+        </div>
+
+    </div>
+    
+    <div><img class="middleimage" src="image.2/IMG_1456.JPG" alt="" > </div>
+
+  
+    
+    
+       
+
+
+    <div class="access" id="access">
+        <div class="accesstop">
+            <h1>交通アクセス</h1>
+            <img src="image.1/4.png" alt="" width="200">
+        </div>
+
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25853.2248500748!2d139.6050699614549!3d35.906510779089366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c14398d521e3%3A0xc741809d9708e34b!2z5Z-8546J55yM44GV44GE44Gf44G-5biC5aSn5a6u5Yy6!5e0!3m2!1sja!2sjp!4v1566987734915!5m2!1sja!2sjp" width="100%" height="400"sframeborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+
+        <p id="h2">〒0000 神奈川県なんとか市なんとかなんとかMURAO Natural Garden</p>
+        <p id="mapp">最寄り駅:神奈川駅　なんとか駅から？分
+            車での行き方:なんとか道路からなんとか<br>
+            なんとかなんとかなんとかなんとかなんとかなんとかなんとか<br>
+        </p>
+    </div>
+    
+    
+    
+    <div class="pagebottom"></div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(function() {
+            $('.bxslider').bxSlider({
+                auto: true,
+                slideWidth: 1263,
+
+                //		minSlides: 3
+            });
+        });
+    </script>
+
+
+    <!--
+<script>
+var elem = document.getElementById("test");
+elem.textContent = "<p id="test">広大な見沼田んぼの一角にある秘密の花園　ナチュラルガーデン村尾<br>
+ 花の持つ美しさ、そして心の癒しをもらいながら、日々ボランティアの方々や<br>
+ 家族と和気あいあいと丹精込めて花づくりに励んでいます。</p>";
+</script>
+-->
+
+    <!--
+<p id="test">広大な見沼田んぼの一角にある秘密の花園　ナチュラルガーデン村尾<br>
+ 花の持つ美しさ、そして心の癒しをもらいながら、日々ボランティアの方々や<br>
+ 家族と和気あいあいと丹精込めて花づくりに励んでいます。</p>
+ 
+<script>
+var elem = document.getElementById("test");
+elem.innerText = "<p id="test">広大な見沼田んぼの一角にある秘密の花園　ナチュラルガーデン村尾<br>
+ 花の持つ美しさ、そして心の癒しをもらいながら、日々ボランティアの方々や<br>
+ 家族と和気あいあいと丹精込めて花づくりに励んでいます。aaaaa</p>";
+</script>
+
+<input type="button" value="もっと見る" onclick="reademore">
+-->
+
+
+
+    <script>
+        function abc() {
+            var elem = document.getElementById("test");
+            elem.innerHTML = "<p>広大な見沼田んぼの一角にある秘密の花園ナチュラルガーデン村尾<br> 2014年秋、100坪から花畑づくりを始めました。年々少しずつ花の種類も増え、<br>5年目を迎えた現在、約350坪の花畑になりました。<br>春～秋ごろまで季節の花々が咲き乱れ、和洋問わず色々花を育て楽しんでいます。<br> 花の持つ美しさ、そして心の癒しをもらいながら、日々ボランティアの方々や<br>家族と和気あいあいと丹精込めて花づくりに励んでいます。<br> 5月のバラ・ポピーから始まり、園内はにぎやかに花の競演が始まります。<br>特に暑い夏は、モナルダ、ガイラルディア、ペンステモン、ミソハギ、花でまり等々、<br>色鮮やかな花たちが競って咲き、それは見事な美しい風景です。<br>日の出の朝、夕日の沈む時間帯の美しさは素晴らしく、心洗われるようです。<br>お花に興味のある皆さま、お花を愛する皆さまに楽しんでいただければ嬉しく思います。<br>ナチュラルガーデン村尾</p>";
+        }
+    </script>
+    
+    
+
+
+
+
+</body></html>
