@@ -1,97 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/springstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Calistoga|EB+Garamond|Lobster&display=swap" rel="stylesheet">
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-     <script src="script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="script.js"></script>
     <title>spring</title>
 </head>
+
 <body>
-<top>
-   
-       
-   
-</top>
-  
-<div class="intro">
-   <h1 class="introh1">Four Seasons</h1>
-   <div class="introimg">
-    <div class="intro1"></div>
-    <div class="intro2"></div>
-    <div class="intro3"></div>
-    <div class="intro4"></div>
-    <div class="intro5"></div>
-    <div class="intro6"></div>
+    <top>
+
+
+
+    </top>
+
+    <div class="intro">
+        <h1 class="introh1">Four Seasons</h1>
+        <div class="introimg">
+            <div class="intro1"></div>
+            <div class="intro2"></div>
+            <div class="intro3"></div>
+            <div class="intro4"></div>
+            <div class="intro5"></div>
+            <div class="intro6"></div>
+        </div>
+
+
     </div>
-    
-    
-</div>
 
-<div class="tab_wrap">
-	<div class="tab_area">
-		<label class="tab_label" for="tab1">SPRING</label>
-		<label class="tab_label" for="tab2">SUMMER</label>
-		<label class="tab_label" for="tab3">AUTUMN</label>
-		<label class="tab_label" for="tab4">WINTER</label>
-		
-	</div>
-	<div class="panel_area">
-		<figure class="image1">
-        <figcaption>
-            <h3>海の写真</h3>
-            <p>ちょっとした説明</p>
-        </figcaption>
-    </figure>
+    <div class="tab_wrap">
+        <div class="tab_area">
+           
+            <label class="tab_label" for="tab1">SPRING</label>
+            <label class="tab_label" for="tab2">SUMMER</label>
+            <label class="tab_label" for="tab3">AUTUMN</label>
+            <label class="tab_label" for="tab4">WINTER</label>
+ 
+        </div>
+
+      
+        <div class="panel-area">
+            <div id="panel1" class="tab-panel">
+                <figure class="image1">
+                    <figcaption>
+                        <h3>海の写真</h3>
+                        <p>ちょっとした説明</p>
+                    </figcaption>
+                </figure>
 
 
-    <figure class="image2">
-        <figcaption>
-            <h3>キャニオンの写真</h3>
-            <p>ちょっとした説明</p>
-        </figcaption>
-    </figure>
+                <figure class="image2">
+                    <figcaption>
+                        <h3>キャニオンの写真</h3>
+                        <p>ちょっとした説明</p>
+                    </figcaption>
+                </figure>
 
-    <figure class="image3">
-        <figcaption>
-            <h3>紅葉の写真</h3>
-            <p>ちょっとした説明</p>
-        </figcaption>
-    </figure>
-		
-		
-			
-		</div>
-		
-		<div id="panel2" class="tab_panel">
-		
-			
-		</div>
-		
-		<div id="panel3" class="tab_panel">
-		
-		</div>
-		
-		<div id="panel4" class="tab_panel">
-		
-			</div>
-			
-		</div>
-		
-	
-	
+                <figure class="image3">
+                    <figcaption>
+                        <h3>紅葉の写真</h3>
+                        <p>ちょっとした説明</p>
+                    </figcaption>
+                </figure>
 
-    
+
+            </div>
+
+
+            <div id="panel2" class="tab_panel">
+                <figure class="image3">
+                    <figcaption>
+                        <h3>紅葉の写真</h3>
+                        <p>ちょっとした説明</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <div id="panel3" class="tab_panel">
+                <figure class="image2">
+                    <figcaption>
+                        <h3>キャニオンの写真</h3>
+                        <p>ちょっとした説明</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div id="panel4" class="tab_panel">
+                <figure class="image3">
+                    <figcaption>
+                        <h3>紅葉の写真</h3>
+                        <p>ちょっとした説明</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
     <script>
-        $(".tab_label").on("click",function(){
+       
+$(".tab_label").on("click",function(){
 	var $th = $(this).index();
 	$(".tab_label").removeClass("active");
 	$(".tab_panel").removeClass("active");
 	$(this).addClass("active");
 	$(".tab_panel").eq($th).addClass("active");
-     });
+});
     </script>
 
-    </body>
+</body>
+
 </html>

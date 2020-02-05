@@ -169,7 +169,6 @@ figure {
     display: flex;
     position: relative;
     overflow: hidden;
-    width: 25vw;
     background-size:cover;
     height: 60vh;
 }
@@ -177,20 +176,25 @@ figure {
 .image1 {
     background-image: url(/image.1/IMG_1488.JPG);
     float: left;
-    margin: 5vh 6.25vw 5vh 6.25vw;
+    margin: 5vh 3vw 5vh 3vw;
+    width: 25vw;
+    
 
 }
 
 .image2{
     background-image: url(/image.2/IMG_0980.jpg);
     float: left;
-    margin: 5vh 0vw 5vh 0vw;
+    margin: 5vh 3vw 5vh 0vw;
+    width: 63vw;
 }
+
 
 .image3{
     background-image: url(/image.1/IMG_1507.JPG);
     float: left;
-    margin: 5vh 0vw 5vh 6.25vw;
+    margin: 5vh 0vw 5vh 0vw;
+    width: 30vw;
 }
 
 figcaption {
